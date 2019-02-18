@@ -49,9 +49,8 @@ export class HomePage extends React.Component<{}> {
 
           <SectionSubtitle>Looking forward,</SectionSubtitle>
           <Paragraph>
-            I am currently engaged in a few passion projects, so I am not
-            looking for new work opportunities or collaborations, but I might be
-            in the future.
+            I am not looking for new work opportunities or collaborations, but I
+            might be in the future.
           </Paragraph>
           <Paragraph>
             If you'd like to keep stay in contact, feel free to{" "}
@@ -60,9 +59,36 @@ export class HomePage extends React.Component<{}> {
 
           <SectionSubtitle>Presently,</SectionSubtitle>
           <H4>
-            I am co-founding <Link to="https://raha.app">Raha</Link>, a
-            non-profit to make the value of a universal basic income tangible
-            today.
+            I am building <Link to="https://eco.com">Eco</Link>, a non-profit
+            platform for donors and nonprofits.
+          </H4>
+          <Paragraph>
+            We are still deciding how we can best improve the philanthropic
+            process; if you have suggestions,{" "}
+            <Link to="#contact">please contact me</Link>!
+          </Paragraph>
+
+          <SectionSubtitle>In retrospect,</SectionSubtitle>
+          <H4>
+            At <Link to="https://clever.com">Clever</Link>, I built{" "}
+            <Link to="https://clever.com/products/badges">Clever Badges</Link>,
+            enabling PreK-2nd grade students to use education apps in the
+            classroom <EmphasisSpan>over 50 million times.</EmphasisSpan>
+          </H4>
+          <Paragraph>
+            I also played a key role in deciding the company's frontend stack. I
+            lead development on our{" "}
+            <Link to="https://clever.github.io/components">
+              React component library and design system
+            </Link>{" "}
+            to make our visual style consistent, and advocated and delivered
+            tools like TypeScript into our workflow to make our code more
+            reliable.
+          </Paragraph>
+
+          <H4>
+            I co-founded <Link to="https://raha.app">Raha</Link>, a non-profit
+            to make the value of a universal basic income tangible today.
           </H4>
           <Paragraph>
             I designed the frameworks and infrastructure for the entire
@@ -83,24 +109,6 @@ export class HomePage extends React.Component<{}> {
             I also wireframed, designed and implemented the UI and UX of the the
             app <Link to="https://raha.app">and website</Link>, besides the
             hand-drawn characters (thanks Tina!).
-          </Paragraph>
-
-          <SectionSubtitle>In retrospect,</SectionSubtitle>
-          <H4>
-            At <Link to="https://clever.com">Clever</Link>, I built{" "}
-            <Link to="https://clever.com/products/badges">Clever Badges</Link>,
-            enabling PreK-2nd grade students to use education apps in the
-            classroom <EmphasisSpan>over 50 million times.</EmphasisSpan>
-          </H4>
-          <Paragraph>
-            I also played a key role in deciding the company's frontend stack. I
-            lead development on our{" "}
-            <Link to="https://clever.github.io/components">
-              React component library and design system
-            </Link>{" "}
-            to make our visual style consistent, and advocated and delivered
-            tools like TypeScript into our workflow to make our code more
-            reliable.
           </Paragraph>
 
           <PageSectionTitle id="passions">Passions</PageSectionTitle>
