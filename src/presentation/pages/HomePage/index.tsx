@@ -67,17 +67,6 @@ export class HomePage extends React.Component<{}> {
               <Link to="#contact">get in touch</Link>.
             </Paragraph>
 
-            <SectionSubtitle>Presently,</SectionSubtitle>
-            <H4>
-              I am building <Link to="https://eco.com">Eco</Link>, a non-profit
-              platform for donors and nonprofits.
-            </H4>
-            <Paragraph>
-              We are still deciding how we can best improve the philanthropic
-              process; if you have suggestions,{" "}
-              <Link to="#contact">please contact me</Link>!
-            </Paragraph>
-
             <SectionSubtitle>In retrospect,</SectionSubtitle>
             <H4>
               At <Link to="https://clever.com">Clever</Link>, I built{" "}
