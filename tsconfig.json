@@ -16,10 +16,8 @@
     "importHelpers": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
-    "typeRoots": [
-      "node_modules/@types/",
-      "types/"
-    ]
+    "types": [],
+    "typeRoots": ["node_modules/@types/", "types/"]
   },
   "exclude": [
     "node_modules",
