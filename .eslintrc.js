@@ -24,6 +24,6 @@ module.exports = {
     // from the extended configs.
     // If you add anything here, justify why.
 
-    "react/prop-types": false // not external facing library, so not needed for TypeScript
+    "react/prop-types": 0 // not external facing library, so not needed for TypeScript
   }
 };
