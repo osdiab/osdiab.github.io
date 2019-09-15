@@ -1,11 +1,9 @@
-import * as Ramda from "ramda";
 import * as React from "react";
 
 import styled from "@app/presentation/theme/styled-components";
 import { ThemeInterface } from "@app/presentation/theme";
 import { Link, LinkAppearance } from "@app/presentation/utility/Link";
 import { logger } from "@app/utility/logger";
-import { OptionalMembers } from "@app/utility/types";
 
 export enum ButtonTargetKind {
   LINK = "LINK",
@@ -25,17 +23,17 @@ export enum ButtonSize {
   LARGE = "LARGE"
 }
 
-export interface IOnClick<Kind extends ButtonTargetKind, action> {
+export interface OnClickShape<Kind extends ButtonTargetKind, action> {
   kind: Kind;
   action: action;
 }
 
 export type OnClick =
-  | IOnClick<ButtonTargetKind.LINK, string>
-  | IOnClick<ButtonTargetKind.FUNCTION, () => void>
-  | IOnClick<ButtonTargetKind.SUBMIT, undefined>;
+  | OnClickShape<ButtonTargetKind.LINK, string>
+  | OnClickShape<ButtonTargetKind.FUNCTION, () => void>
+  | OnClickShape<ButtonTargetKind.SUBMIT, undefined>;
 
-export interface IButtonProps {
+export interface ButtonProps {
   onClick: OnClick;
   size?: ButtonSize;
   disabled?: boolean;
@@ -43,7 +41,7 @@ export interface IButtonProps {
 }
 
 type StyledButtonProps = Pick<
-  Required<IButtonProps>,
+  Required<ButtonProps>,
   "size" | "disabled" | "role"
 >;
 
@@ -82,7 +80,7 @@ function fontColor(params: {
   role: ButtonRole;
   focus: boolean;
 }): string {
-  const { role, theme } = params;
+  const { role, theme, focus } = params;
   switch (role) {
     case ButtonRole.PRIMARY:
       return theme.palette.whiteText;
@@ -127,7 +125,7 @@ function logInvalidSize(size: never) {
   logger.error(`Invalid button size '${size}'. Rendering as medium size.`);
 }
 
-function buttonFontSize(size: IButtonProps["size"]) {
+function buttonFontSize(size: ButtonProps["size"]) {
   switch (size) {
     default:
       logInvalidSize(size);
@@ -142,17 +140,14 @@ function buttonFontSize(size: IButtonProps["size"]) {
   }
 }
 
-const defaultProps: OptionalMembers<IButtonProps> = {
-  size: ButtonSize.MEDIUM,
-  disabled: false,
-  role: ButtonRole.PRIMARY
-};
-
-export const Button: React.StatelessComponent<IButtonProps> = props => {
-  const { onClick, size, disabled, role, children } = {
-    ...defaultProps,
-    ...(Ramda.reject(Ramda.isNil, props) as typeof props)
-  } as Required<IButtonProps> & Pick<typeof props, "children">;
+export const Button: React.StatelessComponent<ButtonProps> = props => {
+  const {
+    onClick,
+    size = ButtonSize.MEDIUM,
+    disabled = false,
+    role = ButtonRole.PRIMARY,
+    children
+  } = props;
 
   switch (onClick.kind) {
     case ButtonTargetKind.LINK: {
