@@ -20,8 +20,7 @@
     "react-router-hash-link": "^1.2.2",
     "react-scripts-ts": "^4.0.8",
     "smoothscroll-polyfill": "^0.4.4",
-    "styled-components": "^5.0.0-beta.8",
-    "winston": "^3.2.1"
+    "styled-components": "^5.0.0-beta.8"
   },
   "devDependencies": {
     "@types/is-relative-url": "^3.0.0",
