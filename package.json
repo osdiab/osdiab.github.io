@@ -11,7 +11,6 @@
     "deploy": "./scripts/check-branch && yarn build && gh-pages --dist build --branch master"
   },
   "dependencies": {
-    "color": "^3.1.2",
     "is-relative-url": "^3.0.0",
     "loadable-components": "^2.2.3",
     "ramda": "^0.26.1",
@@ -25,7 +24,6 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "@types/color": "^3.0.0",
     "@types/is-relative-url": "^3.0.0",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.5",
