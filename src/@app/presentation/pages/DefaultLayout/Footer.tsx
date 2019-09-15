@@ -4,7 +4,6 @@ import styled from "@app/presentation/theme/styled-components";
 import { H2 } from "@app/presentation/utility/Heading";
 import { Link } from "@app/presentation/utility/Link";
 import { PageSection } from "@app/presentation/utility/mixins/PageSection";
-import { Emphasis } from "@app/presentation/utility/mixins/text/Emphasis";
 import { Paragraph } from "@app/presentation/utility/Paragraph";
 
 const InfoSection = styled.section`
