@@ -19,13 +19,5 @@
     "types": [],
     "typeRoots": ["node_modules/@types/", "types/"]
   },
-  "exclude": [
-    "node_modules",
-    "build",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest",
-    "src/setupTests.ts"
-  ]
+  "exclude": ["**/*.test.tsx?", "src/setupTests.ts"]
 }
