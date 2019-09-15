@@ -10,7 +10,6 @@ import * as smoothscroll from "smoothscroll-polyfill";
 
 import styled from "src/presentation/theme/styled-components";
 import { logger } from "src/utility/logger";
-import { highlightColor } from "../theme/palette";
 
 smoothscroll.polyfill();
 
@@ -30,7 +29,7 @@ const HyperlinkA = styled.a`
   transition: color 0.1s ease-in;
 
   :hover {
-    color: ${props => highlightColor(props.theme.palette.primary)};
+    color: ${props => props.theme.palette.primary};
   }
 `;
 const UnstyledA = styled.a`

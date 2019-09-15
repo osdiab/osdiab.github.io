@@ -8,7 +8,6 @@ import styled, {
 import { Link, LinkAppearance } from "src/presentation/utility/Link";
 import { logger } from "src/utility/logger";
 import { OptionalMembers } from "src/utility/types";
-import { highlightColor } from "../theme/palette";
 
 export enum ButtonTargetKind {
   LINK = "LINK",
@@ -81,7 +80,7 @@ function hoverFontColor(params: ButtonColorParameters): string {
     case ButtonRole.SECONDARY:
       return fontColor({ ...params, role: ButtonRole.PRIMARY });
     case ButtonRole.TEXT_ONLY: {
-      return highlightColor(params.palette.primary).toString();
+      return params.palette.primary;
     }
   }
 }
@@ -95,7 +94,7 @@ function hoverBackgroundColor({
     return "transparent";
   }
 
-  return disabled ? palette.disabled : highlightColor(palette.primary);
+  return disabled ? palette.disabled : palette.primary;
 }
 
 function borderColor({
@@ -118,7 +117,7 @@ function hoverBorderColor({
     return "transparent";
   }
 
-  return disabled ? palette.disabled : highlightColor(palette.primary);
+  return disabled ? palette.disabled : palette.primary;
 }
 
 function getColorParams(
