@@ -5,19 +5,20 @@ import {
 import * as React from "react";
 import { hydrate, render } from "react-dom";
 import { App } from "@app/App";
-// import registerServiceWorker from "./registerServiceWorker";
 
-async function startApp() {
+async function startApp(): void {
   const rootElement = document.getElementById("reactRoot") as HTMLElement;
 
-  (window as any).snapSaveState = () => getLoadableState();
+  const snapSaveState = () => getLoadableState();
+  (window as typeof window & {
+    snapSaveState: typeof snapSaveState;
+  }).snapSaveState = snapSaveState;
   if (rootElement.hasChildNodes()) {
     await loadComponents();
     hydrate(<App />, rootElement);
   } else {
     render(<App />, rootElement);
   }
-  // registerServiceWorker();
 }
 
 startApp();
