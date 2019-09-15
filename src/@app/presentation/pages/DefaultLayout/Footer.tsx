@@ -20,13 +20,10 @@ const ContactSection = styled.section`
   padding-bottom: 2rem;
   align-self: flex-start;
 `;
-const EmphasisH2 = styled(H2)`
-  ${Emphasis};
-`;
 export const Footer: React.StatelessComponent<{}> = () => (
   <footer>
     <ContactSection id="contact">
-      <EmphasisH2>Get in touch</EmphasisH2>
+      <H2>Get in touch</H2>
       <Paragraph>
         Feel free to{" "}
         <Link to="mailto://hello@omardiab.com">shoot me an email</Link>
