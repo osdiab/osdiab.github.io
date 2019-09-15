@@ -6,6 +6,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "postbuild": "react-snap",
+    "lint": "eslint --ignore-path .gitignore . --ext .js,.jsx,.ts,.tsx",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "./scripts/check-branch && yarn build && gh-pages --dist build --branch master"
