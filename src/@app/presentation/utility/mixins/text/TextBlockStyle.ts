@@ -1,4 +1,4 @@
-import { css } from "src/presentation/theme/styled-components";
+import { css } from "@app/presentation/theme/styled-components";
 
 export const TextBlockStyle = css`
   :not(:last-child) {

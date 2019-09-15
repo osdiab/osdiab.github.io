@@ -1,12 +1,12 @@
 import * as React from "react";
 
-import styled from "src/presentation/theme/styled-components";
-import { H2, H3, H4 } from "src/presentation/utility/Heading";
-import { INavBarProps, NavBar } from "src/presentation/utility/layout/NavBar";
-import { PageBody } from "src/presentation/utility/layout/PageBody";
-import { Link } from "src/presentation/utility/Link";
-import { Emphasis } from "src/presentation/utility/mixins/text/Emphasis";
-import { Paragraph } from "src/presentation/utility/Paragraph";
+import styled from "@app/presentation/theme/styled-components";
+import { H2, H3, H4 } from "@app/presentation/utility/Heading";
+import { INavBarProps, NavBar } from "@app/presentation/utility/layout/NavBar";
+import { PageBody } from "@app/presentation/utility/layout/PageBody";
+import { Link } from "@app/presentation/utility/Link";
+import { Emphasis } from "@app/presentation/utility/mixins/text/Emphasis";
+import { Paragraph } from "@app/presentation/utility/Paragraph";
 
 const pageEntries: INavBarProps["entries"] = [
   {

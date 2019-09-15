@@ -1,4 +1,4 @@
-import styled from "src/presentation/theme/styled-components";
+import styled from "@app/presentation/theme/styled-components";
 import { PageSection } from "../mixins/PageSection";
 
 export const PageBody = styled.main`

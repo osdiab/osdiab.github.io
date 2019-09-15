@@ -1,4 +1,4 @@
-import { css } from "src/presentation/theme/styled-components";
+import { css } from "@app/presentation/theme/styled-components";
 
 export const Emphasis = css`
   font-weight: 700;

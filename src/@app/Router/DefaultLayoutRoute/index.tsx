@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Route, RouteProps } from "react-router";
 
-import { DefaultLayout } from "src/presentation/pages/DefaultLayout";
+import { DefaultLayout } from "@app/presentation/pages/DefaultLayout";
 
 function createRender(
   Component: RouteProps["component"]

@@ -1,6 +1,6 @@
-import styled, { css } from "src/presentation/theme/styled-components";
-import { TextBlockStyle } from "src/presentation/utility/mixins/text/TextBlockStyle";
-import { Paragraph } from "src/presentation/utility/Paragraph";
+import styled, { css } from "@app/presentation/theme/styled-components";
+import { TextBlockStyle } from "@app/presentation/utility/mixins/text/TextBlockStyle";
+import { Paragraph } from "@app/presentation/utility/Paragraph";
 
 const HeaderMixin = css`
   font-weight: 700;

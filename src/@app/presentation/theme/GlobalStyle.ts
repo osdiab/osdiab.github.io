@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    color: white;
+    color: ${props => props.theme.palette.bodyText};
     font-family: ${props => props.theme.text.fontFamily},
       ${props => props.theme.text.fontFallback};
   }

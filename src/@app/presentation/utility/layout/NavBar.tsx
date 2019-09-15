@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import styled from "src/presentation/theme/styled-components";
-import { Link } from "src/presentation/utility/Link";
+import styled from "@app/presentation/theme/styled-components";
+import { Link } from "@app/presentation/utility/Link";
 import { PageSection } from "../mixins/PageSection";
 
 export interface INavBarEntry {

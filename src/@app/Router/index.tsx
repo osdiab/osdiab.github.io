@@ -1,10 +1,10 @@
 import * as React from "react";
 import { BrowserRouter, Switch } from "react-router-dom";
 
-import { BlogPost } from "src/presentation/pages/BlogPost";
-import { HomePage } from "src/presentation/pages/HomePage";
-import { NotFound } from "src/presentation/pages/NotFound";
-import { DefaultLayoutRoute } from "src/Router/DefaultLayoutRoute";
+import { BlogPost } from "@app/presentation/pages/BlogPost";
+import { HomePage } from "@app/presentation/pages/HomePage";
+import { NotFound } from "@app/presentation/pages/NotFound";
+import { DefaultLayoutRoute } from "@app/Router/DefaultLayoutRoute";
 
 export const Router: React.StatelessComponent<{}> = () => (
   <BrowserRouter>

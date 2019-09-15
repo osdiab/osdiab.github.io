@@ -1,12 +1,11 @@
-import * as color from "color";
 import * as React from "react";
 
-import styled from "src/presentation/theme/styled-components";
-import { H2 } from "src/presentation/utility/Heading";
-import { Link } from "src/presentation/utility/Link";
-import { PageSection } from "src/presentation/utility/mixins/PageSection";
-import { Emphasis } from "src/presentation/utility/mixins/text/Emphasis";
-import { Paragraph } from "src/presentation/utility/Paragraph";
+import styled from "@app/presentation/theme/styled-components";
+import { H2 } from "@app/presentation/utility/Heading";
+import { Link } from "@app/presentation/utility/Link";
+import { PageSection } from "@app/presentation/utility/mixins/PageSection";
+import { Emphasis } from "@app/presentation/utility/mixins/text/Emphasis";
+import { Paragraph } from "@app/presentation/utility/Paragraph";
 
 const InfoSection = styled.section`
   display: flex;
@@ -14,10 +13,7 @@ const InfoSection = styled.section`
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background-color: ${props =>
-    color(props.theme.palette.background)
-      .darken(0.2)
-      .string()};
+  background-color: ${props => props.theme.palette.background};
 `;
 const ContactSection = styled.section`
   ${PageSection};

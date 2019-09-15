@@ -8,8 +8,8 @@ import {
 } from "react-router-hash-link";
 import * as smoothscroll from "smoothscroll-polyfill";
 
-import styled from "src/presentation/theme/styled-components";
-import { logger } from "src/utility/logger";
+import styled from "@app/presentation/theme/styled-components";
+import { logger } from "@app/utility/logger";
 
 smoothscroll.polyfill();
 
@@ -41,7 +41,7 @@ const UnstyledRouterLink = UnstyledA.withComponent(RouterLink);
 
 function logInvalidAppearance(appearance: never) {
   logger.error(
-    `Invalid link appearance: '${appearance}'. ` + "Rendering as hyperlink."
+    `Invalid link appearance: '${appearance}'. Rendering as hyperlink.`
   );
 }
 

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
-import { Id } from "src/models/shared/Id";
+import { Id } from "@app/models/shared/Id";
 
 export interface IBlogPostRouteParams {
   lessonId: Id;
