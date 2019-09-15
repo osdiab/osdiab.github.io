@@ -25,6 +25,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "exclude": ["**/*.test.tsx?", "src/setupTests.ts"],
+  "exclude": ["**/*.test.tsx?"],
   "include": ["src"]
 }
