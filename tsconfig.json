@@ -17,7 +17,6 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "types": [],
-    "typeRoots": ["node_modules/@types/", "types/"],
     "skipLibCheck": false,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": false,
