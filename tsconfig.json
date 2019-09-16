@@ -24,6 +24,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "exclude": ["**/*.test.tsx?"],
+  "exclude": ["src/test/**/*"],
   "include": ["src"]
 }
