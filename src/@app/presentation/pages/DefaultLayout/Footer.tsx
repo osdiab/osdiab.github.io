@@ -12,7 +12,6 @@ const InfoSection = styled.section`
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background-color: ${props => props.theme.palette.background};
 `;
 const ContactSection = styled.section`
   ${PageSection};

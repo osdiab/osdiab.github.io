@@ -11,5 +11,6 @@ export const GlobalStyle = createGlobalStyle`
 
   html, body, #reactRoot {
     min-height: 100vh;
+    background: ${props => props.theme.palette.background}
   }
 `;
