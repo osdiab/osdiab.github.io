@@ -1,8 +1,7 @@
 import { createGlobalStyle } from "styled-components/macro";
 
 import { styleReset } from "@app/presentation/theme/styleReset";
-import { TextStyle } from "@app/presentation/utility/mixins/text/TextStyle";
-import { TextBlockStyle } from "@app/presentation/utility/mixins/text/TextBlockStyle";
+import { globalTextStyles } from "@app/presentation/theme/text";
 
 export const GlobalStyle = createGlobalStyle`
   /* reset default CSS styles */
@@ -22,8 +21,5 @@ export const GlobalStyle = createGlobalStyle`
     background: ${props => props.theme.palette.background}
   }
 
-  p {
-    ${TextStyle};
-    ${TextBlockStyle};
-  }
+  ${globalTextStyles}
 `;
