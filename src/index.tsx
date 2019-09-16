@@ -6,7 +6,7 @@ import * as React from "react";
 import { hydrate, render } from "react-dom";
 import { App } from "@app/App";
 
-async function startApp(): void {
+async function startApp() {
   const rootElement = document.getElementById("reactRoot") as HTMLElement;
 
   const snapSaveState = () => getLoadableState();
