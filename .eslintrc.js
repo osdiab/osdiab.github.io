@@ -48,6 +48,7 @@ module.exports = {
       { vars: "all", args: "none", ignoreRestSiblings: true }
     ],
     "no-return-await": "error", // Useful for performance - makes sure there is no unnecessary unboxing
-    "no-restricted-imports": ["error", { patterns: ["../*", "./*"] }] // disallow relative imports
+    "no-restricted-imports": ["error", { patterns: ["../*", "./*"] }], // disallow relative imports
+    "import/order": ["error", { "newlines-between": "always" }]
   }
 };

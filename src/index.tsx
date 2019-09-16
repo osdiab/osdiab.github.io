@@ -4,6 +4,7 @@ import {
 } from "loadable-components";
 import * as React from "react";
 import { hydrate, render } from "react-dom";
+
 import { App } from "@app/App";
 
 async function startApp() {
