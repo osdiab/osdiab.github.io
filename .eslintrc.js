@@ -51,7 +51,7 @@ module.exports = {
     "no-restricted-imports": [
       "error",
       {
-        patterns: ["../*", "./*"], // disallow relative imports
+        patterns: ["../*", "./*", "../", "./"], // disallow relative imports
         paths: [
           // disallow using styled-components directly instead of typed version
           {
