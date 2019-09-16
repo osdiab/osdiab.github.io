@@ -10,7 +10,7 @@ export const Router: React.StatelessComponent<{}> = () => (
   <BrowserRouter>
     <Switch>
       <DefaultLayoutRoute exact={true} path="/" component={HomePage} />
-      <DefaultLayoutRoute path="/b/:blogPostId" component={BlogPost} />
+      <DefaultLayoutRoute path="/blog/:blogPostId" component={BlogPost} />
       <DefaultLayoutRoute component={NotFound} />
     </Switch>
   </BrowserRouter>
