@@ -8,10 +8,7 @@ module.exports = {
     "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
     "plugin:prettier/recommended", // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
     "react-app",
-    "plugin:react/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript"
+    "plugin:react/recommended"
   ],
   env: {
     browser: true
@@ -53,15 +50,20 @@ module.exports = {
       {
         patterns: ["../*", "./*", "../", "./"], // disallow relative imports
         paths: [
-          // disallow using styled-components directly instead of typed version
+          // disallow using styled-components directly instead of macro version
           {
             name: "styled-components",
-            message:
-              "Please import from @app/presentation/theme/styled-components."
+            message: "Please import from styled-components/macro."
           }
         ]
       }
     ],
-    "import/order": ["error", { "newlines-between": "always" }]
+    "import/order": [
+      "error",
+      {
+        groups: ["builtin", "external", "internal"],
+        "newlines-between": "always"
+      }
+    ]
   }
 };
