@@ -18,7 +18,7 @@ export enum LinkAppearance {
   UNSTYLED = "UNSTYLED"
 }
 
-export interface ILinkProps {
+export interface LinkProps {
   to: string;
   appearance?: LinkAppearance;
 }
@@ -45,7 +45,7 @@ function logInvalidAppearance(appearance: never) {
   );
 }
 
-const AbsoluteLink: React.StatelessComponent<ILinkProps> = ({
+const AbsoluteLink: React.StatelessComponent<LinkProps> = ({
   to,
   appearance,
   children
@@ -63,7 +63,7 @@ const AbsoluteLink: React.StatelessComponent<ILinkProps> = ({
   }
 };
 
-const RelativeLink: React.StatelessComponent<ILinkProps> = ({
+const RelativeLink: React.StatelessComponent<LinkProps> = ({
   to,
   appearance,
   children
@@ -88,7 +88,7 @@ const RelativeLink: React.StatelessComponent<ILinkProps> = ({
 /**
  * A link to external content.
  */
-export const Link: React.StatelessComponent<ILinkProps> = props => {
+export const Link: React.StatelessComponent<LinkProps> = props => {
   return isRelativeUrl(props.to) ? (
     <RelativeLink {...props} />
   ) : (

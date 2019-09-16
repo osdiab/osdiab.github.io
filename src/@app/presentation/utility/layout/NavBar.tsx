@@ -2,14 +2,14 @@ import * as React from "react";
 
 import styled from "@app/presentation/theme/styled-components";
 import { Link } from "@app/presentation/utility/Link";
-import { PageSection } from "../mixins/PageSection";
+import { PageSection } from "@app/presentation/utility/mixins/PageSection";
 
-export interface INavBarEntry {
+export interface NavBarEntry {
   displayText: string;
   to: string;
 }
-export interface INavBarProps {
-  entries: INavBarEntry[];
+export interface NavBarProps {
+  entries: NavBarEntry[];
 }
 
 const NavElem = styled.nav`
@@ -32,7 +32,7 @@ const NavList = styled.ul`
   }
 `;
 
-export const NavBar: React.StatelessComponent<INavBarProps> = ({ entries }) => {
+export const NavBar: React.StatelessComponent<NavBarProps> = ({ entries }) => {
   return (
     <NavElem>
       <NavList>

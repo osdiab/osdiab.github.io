@@ -1,6 +1,6 @@
-import { mediaQueries } from "./mediaQueries";
-import { palette } from "./palette";
-import { text } from "./text";
+import { mediaQueries } from "@app/presentation/theme/mediaQueries";
+import { palette } from "@app/presentation/theme/palette";
+import { text } from "@app/presentation/theme/text";
 
 export const theme = {
   palette,

@@ -3,10 +3,10 @@ import { RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
 import { Id } from "@app/models/shared/Id";
 
-export interface IBlogPostRouteParams {
+export interface BlogPostRouteParams {
   lessonId: Id;
 }
-export type BlogPostProps = RouteComponentProps<IBlogPostRouteParams>;
+export type BlogPostProps = RouteComponentProps<BlogPostRouteParams>;
 export class BlogPost extends React.Component<BlogPostProps> {
   public render() {
     return (

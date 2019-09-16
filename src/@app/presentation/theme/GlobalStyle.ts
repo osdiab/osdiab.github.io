@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "./styled-components";
+import { createGlobalStyle } from "@app/presentation/theme/styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   * {

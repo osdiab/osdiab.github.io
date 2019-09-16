@@ -6,9 +6,13 @@ import { DefaultLayout } from "@app/presentation/pages/DefaultLayout";
 function createRender(
   Component: RouteProps["component"]
 ): RouteProps["render"] {
-  return matchProps => (
-    <DefaultLayout>{Component && <Component {...matchProps} />}</DefaultLayout>
-  );
+  return function renderLayout(matchProps) {
+    return (
+      <DefaultLayout>
+        {Component && <Component {...matchProps} />}
+      </DefaultLayout>
+    );
+  };
 }
 export const DefaultLayoutRoute: React.StatelessComponent<RouteProps> = ({
   component,

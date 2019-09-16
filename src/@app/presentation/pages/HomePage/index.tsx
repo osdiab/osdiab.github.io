@@ -2,13 +2,13 @@ import * as React from "react";
 
 import styled from "@app/presentation/theme/styled-components";
 import { H2, H3, H4 } from "@app/presentation/utility/Heading";
-import { INavBarProps, NavBar } from "@app/presentation/utility/layout/NavBar";
+import { NavBarProps, NavBar } from "@app/presentation/utility/layout/NavBar";
 import { PageBody } from "@app/presentation/utility/layout/PageBody";
 import { Link } from "@app/presentation/utility/Link";
 import { Emphasis } from "@app/presentation/utility/mixins/text/Emphasis";
 import { Paragraph } from "@app/presentation/utility/Paragraph";
 
-const pageEntries: INavBarProps["entries"] = [
+const pageEntries: NavBarProps["entries"] = [
   {
     displayText: "Professional life",
     to: "#professional-life"
@@ -63,7 +63,7 @@ export class HomePage extends React.Component<{}> {
               I might be in the future.
             </Paragraph>
             <Paragraph>
-              If you'd like to keep stay in contact, feel free to{" "}
+              If you&#39;d like to keep stay in contact, feel free to{" "}
               <Link to="#contact">get in touch</Link>.
             </Paragraph>
 
@@ -75,8 +75,8 @@ export class HomePage extends React.Component<{}> {
               classroom <EmphasisSpan>over 50 million times.</EmphasisSpan>
             </H4>
             <Paragraph>
-              I also played a key role in deciding the company's frontend stack.
-              I lead development on our{" "}
+              I also played a key role in deciding the company&#39;s frontend
+              stack. I lead development on our{" "}
               <Link to="https://clever.github.io/components">
                 React component library and design system
               </Link>{" "}
@@ -98,11 +98,11 @@ export class HomePage extends React.Component<{}> {
               to mobile application.
             </Paragraph>
             <Paragraph>
-              It's all designed to be reusable—for instance, the code that makes
-              our API servers work, also produces API clients for our web and
-              mobile apps. That saves us time and money, both because we never
-              push code that misuses our API, but also because working on the
-              app doesn't require understanding of the API.
+              It&#39;s all designed to be reusable—for instance, the code that
+              makes our API servers work, also produces API clients for our web
+              and mobile apps. That saves us time and money, both because we
+              never push code that misuses our API, but also because working on
+              the app doesn&#39;t require understanding of the API.
             </Paragraph>
             <Paragraph>
               I also wireframed, designed and implemented the UI and UX of the
@@ -122,17 +122,17 @@ export class HomePage extends React.Component<{}> {
               picking up their languages.
             </H4>
             <Paragraph>
-              I am living in Tokyo, a place I've always admired for its profound
-              culture and superb urban character. I speak beginner-level
-              Japanese. どうぞよろしく、頑張ります！
+              I am living in Tokyo, a place I&#39;ve always admired for its
+              profound culture and superb urban character. I speak
+              beginner-level Japanese. どうぞよろしく、頑張ります！
             </Paragraph>
             <Paragraph>
               I lived in Shanghai last year, achieving upper-intermediate level
               Mandarin (HSK4-5). 我很高兴认识你。
             </Paragraph>
             <Paragraph>
-              I'm very rusty at Spanish and Levantine Arabic, as I haven't
-              practiced them for a long time.
+              I&#39;m very rusty at Spanish and Levantine Arabic, as I
+              haven&#39;t practiced them for a long time.
             </Paragraph>
 
             <SectionSubtitle>Urban design</SectionSubtitle>
@@ -159,15 +159,15 @@ export class HomePage extends React.Component<{}> {
               of new ones, a more likely scenario.
             </Paragraph>
             <Paragraph>
-              Feel free to <Link to="#contact">get in touch</Link> if you'd like
-              to chat about it.
+              Feel free to <Link to="#contact">get in touch</Link> if you&#39;d
+              like to chat about it.
             </Paragraph>
 
             <SectionSubtitle>Electronic music</SectionSubtitle>
             <H4>I love DJing house and techno music.</H4>
             <Paragraph>
-              I haven't been active as of late, but my mixes run a broad variety
-              of styles from{" "}
+              I haven&#39;t been active as of late, but my mixes run a broad
+              variety of styles from{" "}
               <Link to="https://www.mixcloud.com/osdiab/club-montage/">
                 smooth, soulful vibes
               </Link>
@@ -182,12 +182,13 @@ export class HomePage extends React.Component<{}> {
               . My mixing style tends to be smooth, seamless, harmonic mixes.
             </Paragraph>
             <Paragraph>
-              I've taken a recent interest in mobile DJing, with just a tablet
-              and portable speakers. It's a great deal of fun!
+              I&#39;ve taken a recent interest in mobile DJing, with just a
+              tablet and portable speakers. It&#39;s a great deal of fun!
             </Paragraph>
             <H4>I also produce my own tunes.</H4>
             <Paragraph>
-              It's been a while since I've been active, but I feel good about{" "}
+              It&#39;s been a while since I&#39;ve been active, but I feel good
+              about{" "}
               <Link to="https://soundcloud.com/osdiab/work-in-progress-andy-mckee">
                 this remix of Andy McKee
               </Link>
