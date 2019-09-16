@@ -1,17 +1,16 @@
 import * as React from "react";
 import { RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
-import { Id } from "@app/models/shared/Id";
 
 export interface BlogPostRouteParams {
-  lessonId: Id;
+  blogPostId: string;
 }
 export type BlogPostProps = RouteComponentProps<BlogPostRouteParams>;
 export class BlogPost extends React.Component<BlogPostProps> {
   public render() {
     return (
       <div>
-        <h1>BlogPost {this.props.match.params.lessonId}</h1>
+        <h1>BlogPost {this.props.match.params.blogPostId}</h1>
         <Link to="/">Back</Link>
       </div>
     );
