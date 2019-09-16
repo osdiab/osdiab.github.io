@@ -1,6 +1,6 @@
 import * as React from "react";
+import styled from "styled-components/macro";
 
-import styled from "@app/presentation/theme/styled-components";
 import { H2 } from "@app/presentation/utility/Heading";
 import { Link } from "@app/presentation/utility/Link";
 import { PageSection } from "@app/presentation/utility/mixins/PageSection";

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import styled from "@app/presentation/theme/styled-components";
+import styled from "styled-components/macro";
 import { PageBody } from "@app/presentation/utility/layout/PageBody";
 import { Paragraph } from "@app/presentation/utility/Paragraph";
 

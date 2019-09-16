@@ -1,4 +1,4 @@
-import { css } from "@app/presentation/theme/styled-components";
+import { css } from "styled-components/macro";
 
 export const PageSection = css`
   padding: 20px 60px;

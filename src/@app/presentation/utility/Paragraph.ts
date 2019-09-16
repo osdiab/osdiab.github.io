@@ -1,4 +1,4 @@
-import styled from "@app/presentation/theme/styled-components";
+import styled from "styled-components/macro";
 import { TextBlockStyle } from "@app/presentation/utility/mixins/text/TextBlockStyle";
 import { TextStyle } from "@app/presentation/utility/mixins/text/TextStyle";
 

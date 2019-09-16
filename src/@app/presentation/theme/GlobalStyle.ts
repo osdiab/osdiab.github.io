@@ -1,14 +1,16 @@
-import { createGlobalStyle } from "@app/presentation/theme/styled-components";
+import { createGlobalStyle } from "styled-components/macro";
+
 import { styleReset } from "@app/presentation/theme/styleReset";
+import { TextStyle } from "@app/presentation/utility/mixins/text/TextStyle";
+import { TextBlockStyle } from "@app/presentation/utility/mixins/text/TextBlockStyle";
 
 export const GlobalStyle = createGlobalStyle`
   /* reset default CSS styles */
-  ${styleReset};
+  ${styleReset}
 
   * {
     /* default font everywhere */
-    font-family: ${props => props.theme.text.fontFamily},
-      ${props => props.theme.text.fontFallback};
+    font-family: ${props => props.theme.text.fontFamily};
   }
 
   html, body, #reactRoot {
@@ -18,5 +20,10 @@ export const GlobalStyle = createGlobalStyle`
     /* base colors in page */
     color: ${props => props.theme.palette.bodyText};
     background: ${props => props.theme.palette.background}
+  }
+
+  p {
+    ${TextStyle};
+    ${TextBlockStyle};
   }
 `;

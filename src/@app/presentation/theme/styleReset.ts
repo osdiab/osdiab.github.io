@@ -1,4 +1,4 @@
-import { css } from "@app/presentation/theme/styled-components";
+import { css } from "styled-components/macro";
 
 /**
  * Resets default browser styles in our app.

@@ -1,7 +1,7 @@
 import * as React from "react";
+import styled from "styled-components/macro";
 
 import { GlobalStyle } from "@app/presentation/theme/GlobalStyle";
-import styled from "@app/presentation/theme/styled-components";
 import { Footer } from "@app/presentation/pages/DefaultLayout/Footer";
 import { Header } from "@app/presentation/pages/DefaultLayout/Header";
 
