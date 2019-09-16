@@ -54,5 +54,10 @@
   ],
   "reactSnap": {
     "fixWebpackChunksIssue": false
+  },
+  "babelMacros": {
+    "styledComponents": {
+      "pure": true
+    }
   }
 }
