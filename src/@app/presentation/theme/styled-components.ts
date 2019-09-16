@@ -1,5 +1,4 @@
 import * as styledComponents from "styled-components";
-import { ThemedStyledComponentsModule } from "styled-components";
 
 import { ThemeInterface } from "./";
 
@@ -9,7 +8,9 @@ const {
   keyframes,
   createGlobalStyle,
   ThemeProvider
-} = styledComponents as ThemedStyledComponentsModule<ThemeInterface>;
+} = styledComponents as styledComponents.ThemedStyledComponentsModule<
+  ThemeInterface
+>;
 export type ThemedStyledProps<P> = styledComponents.ThemedStyledProps<
   P,
   ThemeInterface
