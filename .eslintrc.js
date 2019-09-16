@@ -1,6 +1,6 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "prettier"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
@@ -28,6 +28,7 @@ module.exports = {
     // from the extended configs.
     // If you add anything here, justify why.
 
+    "prettier/prettier": "error",
     "react/prop-types": 0, // not external facing library, so not needed for TypeScript
     "@typescript-eslint/explicit-function-return-type": 0, // inference makes code less wordy
     "@typescript-eslint/no-empty-interface": 0, // useful for annotating function of types in progress
