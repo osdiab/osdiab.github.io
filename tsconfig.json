@@ -18,8 +18,8 @@
     "noUnusedLocals": true,
     "types": [],
     "skipLibCheck": false,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true
