@@ -7,8 +7,6 @@ import { Header } from "@app/presentation/pages/DefaultLayout/Header";
 
 const PageContainer = styled.div`
   min-height: 100vh;
-  background:
-
   font-size: ${props => props.theme.text.size.paragraph};
 `;
 
