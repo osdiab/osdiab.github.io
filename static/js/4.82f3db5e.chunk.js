@@ -1,0 +1,2 @@
+(window["webpackJsonposdiab.github.io"]=window["webpackJsonposdiab.github.io"]||[]).push([[4],{52:function(n,i,o){"use strict";o.r(i);var t=o(0),a=o.n(t);i.default=function(){return a.a.createElement("main",null)}}}]);
+//# sourceMappingURL=4.82f3db5e.chunk.js.map

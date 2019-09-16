@@ -1,0 +1,1 @@
+{"version":3,"sources":["@app/presentation/pages/ComponentGallery/index.tsx"],"names":["ComponentGallery"],"mappings":"+HAAA,2BAMeA,UAJoB,WACjC,OAAO","file":"static/js/4.82f3db5e.chunk.js","sourcesContent":["import React from \"react\";\n\nconst ComponentGallery: React.FC = () => {\n  return <main></main>;\n};\n\nexport default ComponentGallery;\n"],"sourceRoot":""}
