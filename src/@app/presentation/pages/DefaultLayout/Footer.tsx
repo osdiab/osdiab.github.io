@@ -1,10 +1,8 @@
 import * as React from "react";
 import styled from "styled-components/macro";
 
-import { H2 } from "@app/presentation/utility/Heading";
 import { Link } from "@app/presentation/utility/Link";
 import { PageSection } from "@app/presentation/utility/mixins/PageSection";
-import { Paragraph } from "@app/presentation/utility/Paragraph";
 
 const InfoSection = styled.section`
   display: flex;
@@ -21,23 +19,23 @@ const ContactSection = styled.section`
 export const Footer: React.StatelessComponent<{}> = () => (
   <footer>
     <ContactSection id="contact">
-      <H2>Get in touch</H2>
-      <Paragraph>
+      <h2>Get in touch</h2>
+      <p>
         Feel free to{" "}
         <Link to="mailto://hello@omardiab.com">shoot me an email</Link>
         {" or "}
         <Link to="https://linkedin.com/in/osdiab">check my LinkedIn</Link>.
-      </Paragraph>
+      </p>
     </ContactSection>
     <InfoSection>
-      <Paragraph>
+      <p>
         Like this site? Feel free to{" "}
         <Link to="https://github.com/osdiab/osdiab.github.io/">
           fork it on Github
         </Link>{" "}
         and make it your own.
-      </Paragraph>
-      <Paragraph>Omar Diab, {new Date().getFullYear()}</Paragraph>
+      </p>
+      <p>Omar Diab, {new Date().getFullYear()}</p>
     </InfoSection>
   </footer>
 );

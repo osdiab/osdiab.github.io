@@ -1,10 +1,9 @@
 import * as React from "react";
-
 import styled from "styled-components/macro";
-import { PageBody } from "@app/presentation/utility/layout/PageBody";
-import { Paragraph } from "@app/presentation/utility/Paragraph";
 
-const BannerTitle = styled(Paragraph)`
+import { PageBody } from "@app/presentation/utility/layout/PageBody";
+
+const BannerTitle = styled.p`
   font-size: 2rem;
   font-weight: 700;
   max-width: 80%;

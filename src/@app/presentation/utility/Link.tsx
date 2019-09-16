@@ -5,8 +5,8 @@ import {
   HashLinkProps as RouterLinkProps
 } from "react-router-hash-link";
 import * as smoothscroll from "smoothscroll-polyfill";
-
 import styled from "styled-components/macro";
+
 import { logger } from "@app/utility/logger";
 
 smoothscroll.polyfill();

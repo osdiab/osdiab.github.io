@@ -1,7 +1,6 @@
 import * as React from "react";
-
 import styled from "styled-components/macro";
-import { H1 } from "@app/presentation/utility/Heading";
+
 import { PageSection } from "@app/presentation/utility/mixins/PageSection";
 
 const HeaderElem = styled.header`
@@ -25,7 +24,7 @@ const Avatar = styled.span`
   margin-right: 20px;
   border-radius: 2px;
 `;
-const BannerTitle = styled(H1)`
+const BannerTitle = styled.h1`
   margin: 0;
   flex: 1;
 `;
