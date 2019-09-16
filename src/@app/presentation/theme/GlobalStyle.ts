@@ -7,14 +7,12 @@ export const GlobalStyle = createGlobalStyle`
   /* reset default CSS styles */
   ${styleReset}
 
-  * {
-    /* default font everywhere */
-    font-family: ${props => props.theme.text.fontFamily};
-  }
-
   html, body, #reactRoot {
     /* page always at least full height*/
     min-height: 100vh;
+
+    /* default font everywhere */
+    font-family: ${props => props.theme.text.fontFamily};
 
     /* base colors in page */
     color: ${props => props.theme.palette.bodyText};
