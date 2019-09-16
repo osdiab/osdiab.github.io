@@ -48,7 +48,20 @@ module.exports = {
       { vars: "all", args: "none", ignoreRestSiblings: true }
     ],
     "no-return-await": "error", // Useful for performance - makes sure there is no unnecessary unboxing
-    "no-restricted-imports": ["error", { patterns: ["../*", "./*"] }], // disallow relative imports
+    "no-restricted-imports": [
+      "error",
+      {
+        patterns: ["../*", "./*"], // disallow relative imports
+        paths: [
+          // disallow using styled-components directly instead of typed version
+          {
+            name: "styled-components",
+            message:
+              "Please import from @app/presentation/theme/styled-components."
+          }
+        ]
+      }
+    ],
     "import/order": ["error", { "newlines-between": "always" }]
   }
 };
