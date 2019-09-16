@@ -1,18 +1,16 @@
 import * as React from "react";
 import { RouteComponentProps } from "react-router";
-import { Link } from "react-router-dom";
+
+import { posts } from "@app/presentation/pages/BlogPost/posts";
+import { NotFound } from "@app/presentation/pages/NotFound";
 
 export interface BlogPostRouteParams {
   blogPostId: string;
 }
 export type BlogPostProps = RouteComponentProps<BlogPostRouteParams>;
-export class BlogPost extends React.Component<BlogPostProps> {
-  public render() {
-    return (
-      <div>
-        <h1>BlogPost {this.props.match.params.blogPostId}</h1>
-        <Link to="/">Back</Link>
-      </div>
-    );
-  }
-}
+
+export const BlogPost: React.FC<BlogPostProps> = props => {
+  const id = props.match.params.blogPostId;
+  const Post = id in posts ? posts[id as keyof typeof posts] : undefined;
+  return Post ? <Post /> : <NotFound />;
+};
