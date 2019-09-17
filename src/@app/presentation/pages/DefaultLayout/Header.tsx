@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "styled-components/macro";
 
+import avatarImg from "@app/assets/avatar.jpg";
 import { PageSection } from "@app/presentation/utility/mixins/PageSection";
 
 const HeaderElem = styled.header`
@@ -16,13 +17,12 @@ const Avatar = styled.span`
   flex: 1;
   align-self: stretch;
 
-  background-image: url(/assets/images/avatar.jpg);
+  background-image: url(${avatarImg});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
   margin-right: 20px;
-  border-radius: 2px;
 `;
 const BannerTitle = styled.h1`
   margin: 0;
