@@ -16,7 +16,7 @@ const Avatar = styled.span`
   flex: 1;
   align-self: stretch;
 
-  background-image: url(/assets/images/avatar.png);
+  background-image: url(/assets/images/avatar.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
