@@ -16,8 +16,8 @@ export class HomePage extends React.Component<{}> {
       <>
         <PageBody>
           <BannerTitle>
-            Omar designs and implements simple, powerful and easily maintainable
-            products.
+            I design and implement simple, powerful and easily maintainable
+            products from start to finish.
           </BannerTitle>
         </PageBody>
       </>
