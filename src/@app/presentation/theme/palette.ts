@@ -3,6 +3,7 @@ export const colors = {
   skyBlue: "#1dced8",
   deepBlue: "#000249",
   brightOrange: "#f6490d",
+  brighterOrange: "#ff7d50",
   paleOrange: "#f97e53",
   mediumGray: "#888888",
   offBlack: "#2a2a2a"
