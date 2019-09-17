@@ -1,7 +1,7 @@
 import { css } from "styled-components/macro";
 
 export const text = {
-  fontFamily: "'Source Serif Pro', serif",
+  fontFamily: "'Libre Franklin', serif",
   size: {
     paragraph: "1.2rem"
   }
