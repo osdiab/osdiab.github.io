@@ -10,6 +10,7 @@ export interface BlogPostRouteParams {
 export type BlogPostProps = RouteComponentProps<BlogPostRouteParams>;
 
 export const UtterancesComments: React.FC = () => (
+  // @ts-ignore
   <script
     src="https://utteranc.es/client.js"
     repo="https://github.com/osdiab/osdiab.github.io"
