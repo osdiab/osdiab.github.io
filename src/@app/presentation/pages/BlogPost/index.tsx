@@ -10,25 +10,29 @@ export interface BlogPostRouteParams {
 export type BlogPostProps = RouteComponentProps<BlogPostRouteParams>;
 
 export const UtterancesComments: React.FC = () => (
-  // @ts-ignore
-  <script
-    src="https://utteranc.es/client.js"
-    repo="osdiab/osdiab.github.io"
-    issue-term="pathname"
-    label="blog-comment"
-    theme="github-light"
-    crossOrigin="anonymous"
-    async
-  ></script>
+  <section
+    ref={elem => {
+      if (!elem) {
+        return;
+      }
+      const scriptElem = document.createElement("script");
+      scriptElem.src = "https://utteranc.es/client.js";
+      scriptElem.async = true;
+      scriptElem.crossOrigin = "anonymous";
+      scriptElem.setAttribute("repo", "osdiab/osdiab.github.io");
+      scriptElem.setAttribute("issue-term", "pathname");
+      scriptElem.setAttribute("label", "blog-comment");
+      scriptElem.setAttribute("theme", "github-light");
+      elem.appendChild(scriptElem);
+    }}
+  />
 );
 
 export const BlogPostLayout: React.FC = ({ children }) => {
   return (
     <>
       <section>{children}</section>
-      <section>
-        <UtterancesComments />
-      </section>
+      <UtterancesComments />
     </>
   );
 };
