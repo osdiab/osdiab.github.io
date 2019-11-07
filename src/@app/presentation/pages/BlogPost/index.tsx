@@ -13,7 +13,7 @@ export const UtterancesComments: React.FC = () => (
   // @ts-ignore
   <script
     src="https://utteranc.es/client.js"
-    repo="https://github.com/osdiab/osdiab.github.io"
+    repo="osdiab/osdiab.github.io"
     issue-term="pathname"
     label="blog-comment"
     theme="github-light"
